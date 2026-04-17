@@ -1,0 +1,27 @@
+// 3. Write a Java program to create a class Car with attributes brand and price. Initialize them using a constructor and create **three objects** to display their values.
+
+
+class Car {
+
+    String brand;
+    int price;
+
+    Car(String b, int p) {
+        brand = b;
+        price = p;
+    }
+
+    void display() {
+        System.out.println(brand + " " + price);
+    }
+
+    public static void main(String[] args) {
+        Car c1 = new Car("BMW", 5000000);
+        Car c2 = new Car("Audi", 4500000);
+        Car c3 = new Car("Tesla", 6000000);
+
+        c1.display();
+        c2.display();
+        c3.display();
+    }
+}
